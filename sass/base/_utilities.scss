@@ -1,0 +1,28 @@
+.u-margin-bottom-medium{
+    margin-bottom: 6rem !important;
+
+
+    @include respond(tab-land){
+        margin-bottom: 9rem !important;
+    }
+
+    @include respond(phone){
+        margin-bottom: 7rem !important;
+    }
+
+    @include respond(smallphone){
+        margin-bottom: 6rem !important;
+    }
+}
+
+.u-margin-bottom-small{
+    margin-bottom: 4rem !important;
+}
+
+.u-center{
+    text-align: center !important; 
+}
+
+.u-margin-top-medium{
+    margin-top: 5rem !important;
+}

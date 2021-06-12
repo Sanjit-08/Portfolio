@@ -1,0 +1,11 @@
+.portfolio{
+    padding:20rem 0;
+    background-image: url('images/portfoliobackground.jpg');
+    background-size: cover;
+    
+
+    &__projectheading{
+        font-size: 3.5rem;
+        color:$color-white; 
+    }
+}

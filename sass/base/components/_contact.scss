@@ -1,0 +1,215 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+
+.contact{
+    padding:20rem 0 10rem 0;
+    font-family: 'Lato', sans-serif;
+
+
+    &__box{
+        
+        width:80%;
+        height:auto;
+        margin: 0 auto;
+
+
+    }
+
+
+    &__contactsection{
+        width:75%;
+        float: left;
+        
+        @include respond(tab-land){
+            width:100%;
+            float: none;
+            margin-bottom: 10rem;
+            margin-left: 8rem;
+        }
+
+        @include respond(tab-port){
+       
+            margin-left:-5rem;
+        }
+
+
+        @include respond(smallphone){
+            margin-left: 1rem;
+        }
+ 
+    }
+
+    &__accountsection{
+        width:25%;
+        float: right;
+
+        @include respond(tab-land){
+            width:30%;
+            float: none;
+            margin-left: 8rem;
+        }
+
+        @include respond(tab-port){
+       
+            margin-left:-5rem;
+            width:40%;
+        }
+
+
+
+        @include respond(smallphone){
+            margin-left: 1rem;
+        }
+    }
+
+    
+
+    &__formgroup{
+        margin-bottom: 2.8rem;
+
+        @include respond(phone){
+            margin-bottom: 3.2rem;
+        }
+    }
+
+    &__heading{
+      font-size: 3.5rem;
+      font-weight: 700;
+      margin-bottom: 2.3rem;
+    }
+
+    &__label{
+        font-size:1.8rem;
+        font-weight: 600;
+        display: inline-block;
+        margin-bottom:1rem;
+    }
+
+    &__input{
+        width:50%;
+        padding: 1.5rem 2rem;
+        display: block;
+
+        &:focus{
+            outline: none;
+        }
+
+        &::placeholder{
+            color:#888;
+        }
+
+        @include respond(tab-port){
+            width:100%;
+        }
+
+        @include respond(smallphone){
+            width:90%;
+        }
+    }
+
+    &__error__message{
+        padding:.2rem 2rem;
+        display: inline-block;
+        // background: #fe8b8e;
+        color:#D8000C;
+        text-align: center;
+        font-size: 1.4rem;
+        font-weight: 600;
+        margin-top: 1rem;
+    }
+
+
+    &__textareainput{
+        display: block;
+        resize: none;
+        padding:1rem 2rem;
+
+        &:focus{
+            outline: none;
+        }
+
+        @include respond(tab-land){
+            width: 55%;
+        }
+
+        @include respond(tab-land){
+            width: 105%;
+        }
+
+        @include respond(phone){
+            width:120%;
+        }
+
+        @include respond(smallphone){
+            width:90%;
+        }
+    }
+
+    &__submit{
+        font-size: $font-default-size;
+        padding: 1rem 3rem;
+        border-radius: 5px;
+        border:none;
+        outline: none;
+        cursor: pointer;
+        background-color: $color-black;
+        color:$color-white;
+
+        &:hover{
+            font-weight: 600;
+            transform: translateY(-.3rem);
+
+        }
+
+        &:active{
+            transform: translateY(-.1rem);
+        }
+
+        &:focus{
+            transform: translateY(-.1rem);
+        }
+    }
+
+    &__emailbox{
+
+        margin-bottom: 2rem;
+        border-bottom: 1px solid $color-black;
+        padding-bottom: 1.5rem;
+
+        &--text{
+            font-size:2.8rem ;
+            font-weight: 700;
+            margin-bottom: 2.3rem;
+        }
+
+        &--email{
+            font-size: $font-default-size;
+            text-decoration: none;
+            font-weight: 600;
+        }
+    }
+
+    &__websection{
+
+        &--text{
+            font-size: 1.8rem;
+            margin-bottom: 2.5rem;
+        }
+
+        &--link1{
+           color:$color-linkedin;
+           margin-right: 2.5rem;
+
+           &:hover{
+               color:rgba($color-linkedin,.8);
+           }
+        }
+
+        &--link2{
+            color:$color-black;
+
+            &:hover{
+                color:rgba($color-black,.6);
+            }
+        }
+    }
+}
